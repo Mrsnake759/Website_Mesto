@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "Проект содержит карточки с фото, которые в будущем можно будет редактировать, а также форму редактирования профиля, которую в последующем тоже можно будет редактировать.",
   "main": "index.js",
+  "homepage": "https://Mrsnake759.github.io/Website_Mesto",
   "scripts": {
     "build": "webpack --mode production",
     "dev": "webpack serve",
@@ -27,7 +28,7 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.4.0",
     "cssnano": "^5.0.8",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^6.1.1",
     "html-webpack-plugin": "^5.4.0",
     "mini-css-extract-plugin": "^2.4.3",
     "postcss-loader": "^6.2.0",
