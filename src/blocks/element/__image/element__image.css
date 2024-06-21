@@ -1,0 +1,22 @@
+.element__image {
+  width: 100%;
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 10px 10px 0 0;
+  height: 282px;
+  cursor: pointer;
+}
+
+@media (max-width: 740px) {
+  .element__image {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .element__image {
+    width: 282px;
+    height: 282px;
+  }
+}

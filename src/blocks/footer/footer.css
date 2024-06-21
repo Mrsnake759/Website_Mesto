@@ -1,0 +1,16 @@
+.footer {
+  margin: 67px 15.6% 60px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    margin: 0 19px 36px;
+  }
+}

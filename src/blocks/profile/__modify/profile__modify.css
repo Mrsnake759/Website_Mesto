@@ -1,0 +1,10 @@
+.profile__modify {
+  position: relative;
+  width: 120px;
+}
+
+@media (max-width: 630px) {
+  .profile__modify {
+    margin: auto;
+  }
+}

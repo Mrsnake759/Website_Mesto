@@ -1,0 +1,31 @@
+.element {
+  width: 282px;
+  position: relative;
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .element {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 740px) {
+  .element {
+    width: 400px;
+  }
+}
+
+@media (max-width: 500px) {
+  .element {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .element {
+    width: 282px;
+  }
+}

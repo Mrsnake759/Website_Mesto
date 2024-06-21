@@ -1,0 +1,21 @@
+.popup__item {
+  border: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 24px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #bcbcc4;
+  background-color: transparent;
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.popup__item::placeholder {
+  color: #c4c4c4;
+}
+
+.popup__item:last-of-type {
+  margin-top: 30px;
+}

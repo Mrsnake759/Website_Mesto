@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Место</title>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <img
+        class="header__logo"
+        src="<%=require('./images/logo.svg')%>"
+        alt="Логотип с надписями: Место и Россия."
+      />
+    </header>
+
+    <main class="main-content">
+      <div class="profile">
+        <div class="profile__group">
+          <div class="profile__modify">
+            <img class="profile__avatar" src="" alt="Аватар пользователя." />
+            <button class="profile__modify-button" type="button"></button>
+          </div>
+          <div class="profile__info">
+            <div class="profile__info-holder">
+              <h1 class="profile__title"></h1>
+              <button class="profile__edit-button" type="button"></button>
+            </div>
+
+            <p class="profile__subtitle"></p>
+          </div>
+        </div>
+        <button class="profile__add-button" type="button"></button>
+      </div>
+
+      <div class="elements"></div>
+
+      <template class="elements-template">
+        <div class="element">
+          <button
+            class="element__delete element__delete_visible"
+            type="button"
+          ></button>
+          <img class="element__image" src="" alt="" />
+          <div class="element__group">
+            <p class="element__text"></p>
+            <div class="element__like-group">
+              <button class="element__like" type="button"></button>
+              <p class="element__number-like"></p>
+            </div>
+          </div>
+        </div>
+      </template>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
+
+    <div class="popup edit-profile">
+      <form
+        class="popup__container edit-profile__container"
+        name="edit-form"
+        novalidate
+      >
+        <button class="popup__close" type="button"></button>
+        <h2 class="popup__heading">Редактировать профиль</h2>
+        <fieldset class="popup__input-container">
+          <input
+            name="name"
+            type="text"
+            class="popup__item popup__item_type_name"
+            required
+            minlength="2"
+            maxlength="40"
+            id="name-input"
+            placeholder="Имя"
+          />
+          <span class="popup__input-error name-input-error"></span>
+          <input
+            name="about"
+            type="text"
+            class="popup__item popup__item_type_job"
+            required
+            minlength="2"
+            maxlength="200"
+            id="job-input"
+            placeholder="О себе"
+          />
+          <span class="popup__input-error job-input-error"></span>
+        </fieldset>
+        <fieldset class="popup__handlers">
+          <button type="submit" class="popup__button edit-profile__button">
+            Сохранить
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="popup place">
+      <form
+        class="popup__container place__container"
+        name="edit-form"
+        novalidate
+      >
+        <button class="popup__close place__close" type="button"></button>
+        <h2 class="popup__heading">Новое место</h2>
+        <fieldset class="popup__input-container">
+          <input
+            name="name"
+            type="text"
+            placeholder="Название"
+            class="popup__item popup__item_type_location"
+            required
+            minlength="2"
+            maxlength="30"
+            id="location-input"
+          />
+          <span class="popup__input-error location-input-error"></span>
+          <input
+            name="link"
+            type="url"
+            placeholder="Ссылка на картинку"
+            class="popup__item popup__item_type_link"
+            required
+            id="link-input"
+          />
+          <span class="popup__input-error link-input-error"></span>
+        </fieldset>
+        <fieldset class="popup__handlers">
+          <button type="submit" class="popup__button place__button">
+            Создать
+          </button>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="popup image">
+      <div class="popup__container image__container">
+        <button class="popup__close image__close" type="button"></button>
+        <img class="popup__image image__src" src="#" alt="" />
+        <p class="image__place"></p>
+      </div>
+    </div>
+
+    <div class="popup avatar">
+      <form
+        class="popup__container avatar__container"
+        name="edit-form"
+        novalidate
+      >
+        <button class="popup__close" type="button"></button>
+        <h2 class="popup__heading avatar__heading">Обновить аватар</h2>
+        <fieldset class="popup__input-container">
+          <input
+            type="url"
+            class="popup__item popup__item_type_avatar"
+            required
+            id="avatar-input"
+            name="avatar"
+            placeholder="Аватар пользователя"
+          />
+          <span class="popup__input-error avatar-input-error"></span>
+        </fieldset>
+        <fieldset class="popup__handlers">
+          <button type="submit" class="popup__button avatar__button">
+            Сохранить
+          </button>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

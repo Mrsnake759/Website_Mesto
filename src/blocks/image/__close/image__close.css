@@ -1,0 +1,11 @@
+.image__close {
+  top: -40px;
+  right: -40px;
+}
+
+@media (max-width: 400px) {
+  .image__close {
+    top: -36px;
+    right: 0px;
+  }
+}
