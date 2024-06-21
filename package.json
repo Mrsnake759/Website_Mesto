@@ -12,14 +12,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/IIKolchin/mesto.git"
+    "url": "git+https://github.com/Mrsnake759/Website_Mesto.git"
   },
   "author": "\"Stas Basov\"",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/IIKolchin/mesto/issues"
   },
-  "homepage": "https://github.com/IIKolchin/mesto#readme",
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@babel/preset-env": "^7.15.8",
